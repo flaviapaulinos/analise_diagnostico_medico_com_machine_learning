@@ -7,7 +7,7 @@ Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-lut
 ### 🔍 Visão Geral / Overview
 PT: Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
 
-Seleção de features (Mutual Information, Chi², ANOVA)
+Seleção de features (Mutual Information)
 
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
 
@@ -17,7 +17,7 @@ Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
 EN: Classification model comparison for benign/malignant diagnosis featuring:
 
-Feature selection (Mutual Information, Chi², ANOVA)
+Feature selection (Mutual Information)
 
 Adaptive preprocessing (PowerTransformer for linear models)
 
