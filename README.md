@@ -1,19 +1,136 @@
-# Modelo de projeto de ciência de dados
+![Imagem](relatorios/imagens/pexels-cottonbro-5701676.jpg)
+Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-luta-combate-5701676/
 
-Modelo de projeto de ciência de dados para ser utilizado como referência em projetos
-futuros. Desenvolvido por mim, [Francisco Bustamante](https://github.com/chicolucio),
-para alunos iniciantes em ciência de dados de meus cursos e mentorias.
+# Análise de Diagnóstico Médico com Machine Learning
+(Medical Diagnosis Analysis with Machine Learning)
 
-Inspiração: [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+### 🔍 Visão Geral / Overview
+PT: Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
+
+Seleção de features (Mutual Information, Chi², ANOVA)
+
+Pré-processamento adaptativo (PowerTransformer para modelos lineais)
+
+Otimização de hiperparâmetros
+
+Análise comparativa (Regressão Logística vs XGBoost vs SVC)
+
+EN: Classification model comparison for benign/malignant diagnosis featuring:
+
+Feature selection (Mutual Information, Chi², ANOVA)
+
+Adaptive preprocessing (PowerTransformer for linear models)
+
+Hyperparameter tuning
+
+Comparative analysis (Logistic Regression vs XGBoost vs SVC)
+
+## Base de Dados/ Dataset
+
+### Descrição
+O câncer de mama é o tipo de câncer mais comum entre as mulheres no mundo, representando 25% de todos os casos de câncer. Em 2015, afetou mais de 2,1 milhões de pessoas. A doença começa quando as células da mama começam a crescer descontroladamente, formando tumores que podem ser detectados por meio de raio-X ou como nódulos na região da mama.
+
+O principal desafio para sua detecção é classificar os tumores em **malignos** (cancerosos) ou **benignos** (não cancerosos). Este projeto utiliza o conjunto de dados Breast Cancer Wisconsin (Diagnostic) para realizar essa classificação.
+
+### Características do Conjunto de Dados
+- **Número de Instâncias:** 569 (malignas e benignas)
+- 
+- **Número de Atributos:** 30 (características extraídas de imagens digitalizadas de núcleos celulares)
+- 
+- **Atributos Incluem:** raio, textura, perímetro, área, suavidade, compactação, concavidade, pontos côncavos, simetria, dimensão fractal, etc.
+- 
+- **Variável Alvo:** Diagnóstico (Maligno = `M`, Benigno = `B`)
+
+### Fonte dos Dados
+O conjunto de dados foi obtido do [Kaggle](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset/data).
+
+### Agradecimentos
+Este conjunto de dados foi referenciado a partir do Kaggle. Originalmente, os dados foram criados pelo Dr. William H. Wolberg da Universidade de Wisconsin.
+
+EN: 
+### Description
+Breast cancer is the most common cancer among women worldwide, accounting for 25% of all cancer cases. In 2015 alone, it affected over 2.1 million people. The disease begins when breast cells grow uncontrollably, forming tumors that can be detected via X-ray or as lumps in the breast area.
+
+The key challenge lies in classifying tumors as either malignant (dangerous) or benign (harmless). This project uses the Breast Cancer Wisconsin dataset to perform this classification.
+
+### Dataset Characteristics
+
+Number of Instances: 569 (malignant and benign)
+
+Number of Attributes: 30 (numeric features extracted from digitized cell nuclei images)
+
+Attributes Include: radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension, etc.
+
+Target Variable: Diagnosis (M = malignant, B = benign)
+
+### Data Source
+
+The dataset was obtained from Kaggle.
+
+Acknowledgments
+
+This dataset was referenced from Kaggle. Original data was created by Dr. William H. Wolberg (University of Wisconsin).
+
+### 📈 Principais Resultados / Key Findings
+
+### 🏆 Performance dos Modelos (F2-Score)
+
+Modelo	          F2-Score	      Tempo (s)
+
+XGBClassifier	    0.945	      0.598
+
+LogisticRegression	0.937	      0.706
+
+SVC	                0.922	     0.716
+
+### 🔑 Features Mais Importantes
+
+concave_points_mean (Odds Ratio: 41.79)
+
+area_worst (Importância: 17.31)
+
+radius_worst (SHAP value: 1.71)
+
+### 💡 Insights Técnicos / Technical Insights
+
+PT
+Seleção de Features:
+
+Redução de 30 para 15 features sem perda de performance
+
+Métodos concordaram em 11 features críticas
+
+Pré-processamento:
+
+PowerTransformer essencial para modelos lineares
+
+Árvores performaram melhor com dados originais
+
+EN
+Feature Selection:
+
+Reduced from 30 to 15 features without performance loss
+
+Methods agreed on 11 critical features
+
+Preprocessing:
+
+PowerTransformer critical for linear models
+
+Trees performed better with raw data
+
+
+
 
 Clique no botão **Use this template** para criar um novo repositório com base neste modelo.
 
 ## Organização do projeto
 
 ```
-├── .env               <- Arquivo de variáveis de ambiente (não versionar)
+
 ├── .gitignore         <- Arquivos e diretórios a serem ignorados pelo Git
 ├── ambiente.yml       <- O arquivo de requisitos para reproduzir o ambiente de análise
+├── requirements.txt   <- O arquivo para instalar dependências via pip
 ├── LICENSE            <- Licença de código aberto se uma for escolhida
 ├── README.md          <- README principal para desenvolvedores que usam este projeto.
 |
@@ -28,10 +145,12 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
 |      ├── __init__.py  <- Torna um módulo Python
+|      ├── auxiliares.py<- Funções auxiliares do projeto
 |      ├── config.py    <- Configurações básicas do projeto
-|      └── graficos.py  <- Scripts para criar visualizações exploratórias e orientadas a resultados
+|      ├── graficos.py  <- Scripts para criar visualizações exploratórias e orientadas a resultados
+|      └── modelos.py   <- Funções utilizadas no modelo
 |
-├── referencias        <- Dicionários de dados, manuais e todos os outros materiais explicativos.
+├── referencias        <- Dicionários de dados.
 |
 ├── relatorios         <- Análises geradas em HTML, PDF, LaTeX, etc.
 │   └── imagens        <- Gráficos e figuras gerados para serem usados em relatórios
@@ -45,42 +164,6 @@ Clique no botão **Use this template** para criar um novo repositório com base 
     git clone ENDERECO_DO_REPOSITORIO
     ```
 
-2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
-
-    a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `ambiente.yml`:
-
-      ```bash
-      conda env export > ambiente.yml
-      ```
-
-    b. Caso esteja utilizando outro gerenciador de ambientes, exporte as dependências
-    para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
-    arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
-
-3. Verifique o arquivo `notebooks/01-fb-exemplo.ipynb` para exemplos
-de uso do código.
-4. Renomeie o arquivo `notebooks/01-fb-exemplo.ipynb` para um nome
-mais apropriado ao seu projeto. E siga a convenção de nomenclatura para os demais
-notebooks.
-5. Remova arquivos de exemplo e adicione os arquivos de dados e notebooks do seu
-projeto.
-6. Verifique o arquivo `notebooks/src/config.py` para configurações básicas do projeto.
-Modifique conforme necessário, adicionando ou removendo caminhos de arquivos e
-diretórios.
-7. Atualize o arquivo `referencias/01_dicionario_de_dados.md` com o dicionário de dados
-do seu projeto.
-8. Atualize o `README.md` com informações sobre o seu projeto.
-9. Adicione uma licença ao projeto. Clique
-[aqui](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-se precisar de ajuda para escolher uma licença.
-10. Renomeie o arquivo `.env.exemplo` para `.env`
-11. Adicione variáveis de ambiente sensíveis ao arquivo `.env`.
-
-Por padrão, o arquivo `.gitignore` já está configurado para ignorar arquivos de dados e
-arquivos de Notebook (para aqueles que usam ferramentas como
-[Jupytext](https://jupytext.readthedocs.io/en/latest/) e similares). Adicione ou remova
-outros arquivos e diretórios do `.gitignore` conforme necessário. Caso deseje adicionar
-forçadamente um Notebook ao controle de versão, faça um commit forçado com o
-comando `git add --force NOME_DO_ARQUIVO.ipynb`.
-
 Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
+
+

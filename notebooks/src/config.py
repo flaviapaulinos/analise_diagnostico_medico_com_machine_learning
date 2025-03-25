@@ -6,7 +6,8 @@ PASTA_PROJETO = Path(__file__).resolve().parents[2]
 PASTA_DADOS = PASTA_PROJETO / "dados"
 
 # coloque abaixo o caminho para os arquivos de dados de seu projeto
-DADOS_ORIGINAIS = PASTA_DADOS / "exemplo.csv"
+DADOS_ORIGINAIS = PASTA_DADOS / "breast-cancer.csv"
+DADOS_LIMPOS = PASTA_DADOS / "breast-cancer-clean.parquet"
 
 # coloque abaixo o caminho para os arquivos de modelos de seu projeto
 PASTA_MODELOS = PASTA_PROJETO / "modelos"
