@@ -8,21 +8,15 @@ Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-lut
 PT: Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
 
 Seleção de features (Mutual Information)
-
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
-
 Otimização de hiperparâmetros
-
 Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
 EN: Classification model comparison for benign/malignant diagnosis featuring:
 
 Feature selection (Mutual Information)
-
 Adaptive preprocessing (PowerTransformer for linear models)
-
 Hyperparameter tuning
-
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
 
 ## Base de Dados/ Dataset
@@ -34,11 +28,11 @@ O principal desafio para sua detecção é classificar os tumores em **malignos*
 
 ### Características do Conjunto de Dados
 - **Número de Instâncias:** 569 (malignas e benignas)
-- 
+  
 - **Número de Atributos:** 30 (características extraídas de imagens digitalizadas de núcleos celulares)
-- 
+  
 - **Atributos Incluem:** raio, textura, perímetro, área, suavidade, compactação, concavidade, pontos côncavos, simetria, dimensão fractal, etc.
-- 
+  
 - **Variável Alvo:** Diagnóstico (Maligno = `M`, Benigno = `B`)
 
 ### Fonte dos Dados
