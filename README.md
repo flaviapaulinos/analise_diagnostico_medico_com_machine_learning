@@ -67,7 +67,7 @@ This dataset was referenced from Kaggle. Original data was created by Dr. Willia
 
 ### 📈 Principais Resultados / Key Findings
 
-### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)/
+### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)
 
 Modelo/Model: XGBClassifier	    
 F2-Score: 0.945	      
