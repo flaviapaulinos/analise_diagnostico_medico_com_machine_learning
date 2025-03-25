@@ -67,15 +67,19 @@ This dataset was referenced from Kaggle. Original data was created by Dr. Willia
 
 ### 📈 Principais Resultados / Key Findings
 
-### 🏆 Performance dos Modelos (F2-Score)
+### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)/
 
-Modelo	          F2-Score	      Tempo (s)
+Modelo/Model: XGBClassifier	    
+F2-Score: 0.945	      
+Tempo/Time: 0.598
 
-XGBClassifier	    0.945	      0.598
+Modelo/Model: LogisticRegression	
+F2-Score: 0.937	      
+Tempo/Time: 0.706
 
-LogisticRegression	0.937	      0.706
-
-SVC	                0.922	     0.716
+Modelo/Model: SVC	                
+F2-Score: 0.922	     
+Tempo/Time: 0.716
 
 ### 🔑 Features Mais Importantes
 
