@@ -92,6 +92,7 @@ radius_worst (SHAP value: 1.71)
 ### 💡 Insights Técnicos / Technical Insights
 
 PT
+
 Seleção de Features:
 
 Redução de 30 para 15 features sem perda de performance
@@ -105,6 +106,7 @@ PowerTransformer essencial para modelos lineares
 Árvores performaram melhor com dados originais
 
 EN
+
 Feature Selection:
 
 Reduced from 30 to 15 features without performance loss
@@ -118,9 +120,6 @@ PowerTransformer critical for linear models
 Trees performed better with raw data
 
 
-
-
-Clique no botão **Use this template** para criar um novo repositório com base neste modelo.
 
 ## Organização do projeto
 
@@ -146,7 +145,7 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 |
 ├── referencias        <- Dicionários de dados.
 |
-├── relatorios        
+├── relatorios         <- Relatório
 │   └── imagens        <- Gráficos e figuras gerados para serem usados em relatórios
 ```
 
