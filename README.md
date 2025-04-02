@@ -7,22 +7,16 @@ Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-lut
 ### 🔍 Visão Geral / Overview
 PT: Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
 
-Seleção de features (Mutual Information, Chi², ANOVA)
-
+Seleção de features (Mutual Information)
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
-
 Otimização de hiperparâmetros
-
 Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
 EN: Classification model comparison for benign/malignant diagnosis featuring:
 
-Feature selection (Mutual Information, Chi², ANOVA)
-
+Feature selection (Mutual Information)
 Adaptive preprocessing (PowerTransformer for linear models)
-
 Hyperparameter tuning
-
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
 
 ## Base de Dados/ Dataset
@@ -34,11 +28,11 @@ O principal desafio para sua detecção é classificar os tumores em **malignos*
 
 ### Características do Conjunto de Dados
 - **Número de Instâncias:** 569 (malignas e benignas)
-- 
+  
 - **Número de Atributos:** 30 (características extraídas de imagens digitalizadas de núcleos celulares)
-- 
+  
 - **Atributos Incluem:** raio, textura, perímetro, área, suavidade, compactação, concavidade, pontos côncavos, simetria, dimensão fractal, etc.
-- 
+  
 - **Variável Alvo:** Diagnóstico (Maligno = `M`, Benigno = `B`)
 
 ### Fonte dos Dados
@@ -73,15 +67,19 @@ This dataset was referenced from Kaggle. Original data was created by Dr. Willia
 
 ### 📈 Principais Resultados / Key Findings
 
-### 🏆 Performance dos Modelos (F2-Score)
+### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)/
 
-Modelo	          F2-Score	      Tempo (s)
+Modelo/Model: XGBClassifier	    
+F2-Score: 0.945	      
+Tempo/Time: 0.598
 
-XGBClassifier	    0.945	      0.598
+Modelo/Model: LogisticRegression	
+F2-Score: 0.937	      
+Tempo/Time: 0.706
 
-LogisticRegression	0.937	      0.706
-
-SVC	                0.922	     0.716
+Modelo/Model: SVC	                
+F2-Score: 0.922	     
+Tempo/Time: 0.716
 
 ### 🔑 Features Mais Importantes
 
@@ -136,11 +134,7 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 |
 ├── dados              <- Arquivos de dados para o projeto.
 |
-├── modelos            <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
-|
-├── notebooks          <- Cadernos Jupyter. A convenção de nomenclatura é um número (para ordenação),
-│                         as iniciais do criador e uma descrição curta separada por `-`, por exemplo
-│                         `01-fb-exploracao-inicial-de-dados`.
+├── notebooks          <- Cadernos Jupyter. 
 │
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
@@ -152,7 +146,7 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 |
 ├── referencias        <- Dicionários de dados.
 |
-├── relatorios         <- Análises geradas em HTML, PDF, LaTeX, etc.
+├── relatorios        
 │   └── imagens        <- Gráficos e figuras gerados para serem usados em relatórios
 ```
 
@@ -163,7 +157,6 @@ Clique no botão **Use this template** para criar um novo repositório com base 
     ```bash
     git clone ENDERECO_DO_REPOSITORIO
     ```
-
 Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
 
 
