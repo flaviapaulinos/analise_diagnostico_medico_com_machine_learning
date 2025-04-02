@@ -5,15 +5,25 @@ Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-lut
 (Medical Diagnosis Analysis with Machine Learning)
 
 ### 🔍 Visão Geral / Overview
-PT: Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
+PT: 
 
+<<<<<<< HEAD
+=======
+Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
+
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 Seleção de features (Mutual Information)
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
 Otimização de hiperparâmetros
 Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
-EN: Classification model comparison for benign/malignant diagnosis featuring:
+EN: 
 
+<<<<<<< HEAD
+=======
+Classification model comparison for benign/malignant diagnosis featuring:
+
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 Feature selection (Mutual Information)
 Adaptive preprocessing (PowerTransformer for linear models)
 Hyperparameter tuning
@@ -42,6 +52,7 @@ O conjunto de dados foi obtido do [Kaggle](https://www.kaggle.com/datasets/yasse
 Este conjunto de dados foi referenciado a partir do Kaggle. Originalmente, os dados foram criados pelo Dr. William H. Wolberg da Universidade de Wisconsin.
 
 EN: 
+
 ### Description
 Breast cancer is the most common cancer among women worldwide, accounting for 25% of all cancer cases. In 2015 alone, it affected over 2.1 million people. The disease begins when breast cells grow uncontrollably, forming tumors that can be detected via X-ray or as lumps in the breast area.
 
@@ -67,7 +78,11 @@ This dataset was referenced from Kaggle. Original data was created by Dr. Willia
 
 ### 📈 Principais Resultados / Key Findings
 
+<<<<<<< HEAD
 ### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)/
+=======
+### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Modelo/Model: XGBClassifier	    
 F2-Score: 0.945	      
@@ -91,7 +106,11 @@ radius_worst (SHAP value: 1.71)
 
 ### 💡 Insights Técnicos / Technical Insights
 
+<<<<<<< HEAD
 PT
+=======
+PT:
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Seleção de Features:
 
@@ -105,7 +124,11 @@ PowerTransformer essencial para modelos lineares
 
 Árvores performaram melhor com dados originais
 
+<<<<<<< HEAD
 EN
+=======
+EN:
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Feature Selection:
 
@@ -120,7 +143,10 @@ PowerTransformer critical for linear models
 Trees performed better with raw data
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 ## Organização do projeto
 
 ```
@@ -133,7 +159,11 @@ Trees performed better with raw data
 |
 ├── dados              <- Arquivos de dados para o projeto.
 |
+<<<<<<< HEAD
 ├── notebooks          <- Cadernos Jupyter. 
+=======
+├── notebooks          <- Cadernos Jupyter.
+>>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 │
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
@@ -157,5 +187,6 @@ Trees performed better with raw data
     git clone ENDERECO_DO_REPOSITORIO
     ```
 Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
+
 
 
