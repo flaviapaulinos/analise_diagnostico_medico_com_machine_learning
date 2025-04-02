@@ -130,8 +130,6 @@ Trees performed better with raw data
 |
 ├── dados              <- Arquivos de dados para o projeto.
 |
-├── modelos            <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
-|
 ├── notebooks          <- Cadernos Jupyter.
 │
 |   └──src             <- Código-fonte para uso neste projeto.
