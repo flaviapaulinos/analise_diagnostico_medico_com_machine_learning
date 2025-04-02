@@ -5,13 +5,11 @@ Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/mulher-sem-rosto-lut
 (Medical Diagnosis Analysis with Machine Learning)
 
 ### 🔍 Visão Geral / Overview
+
 PT: 
 
-<<<<<<< HEAD
-=======
 Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
 
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 Seleção de features (Mutual Information)
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
 Otimização de hiperparâmetros
@@ -19,17 +17,16 @@ Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
 EN: 
 
-<<<<<<< HEAD
-=======
 Classification model comparison for benign/malignant diagnosis featuring:
 
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 Feature selection (Mutual Information)
 Adaptive preprocessing (PowerTransformer for linear models)
 Hyperparameter tuning
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
 
 ## Base de Dados/ Dataset
+
+PT: 
 
 ### Descrição
 O câncer de mama é o tipo de câncer mais comum entre as mulheres no mundo, representando 25% de todos os casos de câncer. Em 2015, afetou mais de 2,1 milhões de pessoas. A doença começa quando as células da mama começam a crescer descontroladamente, formando tumores que podem ser detectados por meio de raio-X ou como nódulos na região da mama.
@@ -78,11 +75,7 @@ This dataset was referenced from Kaggle. Original data was created by Dr. Willia
 
 ### 📈 Principais Resultados / Key Findings
 
-<<<<<<< HEAD
 ### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)/
-=======
-### 🏆 Performance dos Modelos (F2-Score)/ Model Performance (F2-Score)
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Modelo/Model: XGBClassifier	    
 F2-Score: 0.945	      
@@ -106,11 +99,7 @@ radius_worst (SHAP value: 1.71)
 
 ### 💡 Insights Técnicos / Technical Insights
 
-<<<<<<< HEAD
 PT
-=======
-PT:
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Seleção de Features:
 
@@ -124,11 +113,7 @@ PowerTransformer essencial para modelos lineares
 
 Árvores performaram melhor com dados originais
 
-<<<<<<< HEAD
 EN
-=======
-EN:
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 
 Feature Selection:
 
@@ -143,10 +128,7 @@ PowerTransformer critical for linear models
 Trees performed better with raw data
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 ## Organização do projeto
 
 ```
@@ -159,11 +141,7 @@ Trees performed better with raw data
 |
 ├── dados              <- Arquivos de dados para o projeto.
 |
-<<<<<<< HEAD
 ├── notebooks          <- Cadernos Jupyter. 
-=======
-├── notebooks          <- Cadernos Jupyter.
->>>>>>> 2de62bf7f8b382c51d6da7eaa50b649134f38b0f
 │
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
@@ -187,6 +165,5 @@ Trees performed better with raw data
     git clone ENDERECO_DO_REPOSITORIO
     ```
 Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
-
 
 
