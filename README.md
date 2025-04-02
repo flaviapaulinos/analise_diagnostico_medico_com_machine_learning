@@ -118,10 +118,6 @@ PowerTransformer critical for linear models
 Trees performed better with raw data
 
 
-
-
-Clique no botão **Use this template** para criar um novo repositório com base neste modelo.
-
 ## Organização do projeto
 
 ```
@@ -136,9 +132,7 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 |
 ├── modelos            <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
 |
-├── notebooks          <- Cadernos Jupyter. A convenção de nomenclatura é um número (para ordenação),
-│                         as iniciais do criador e uma descrição curta separada por `-`, por exemplo
-│                         `01-fb-exploracao-inicial-de-dados`.
+├── notebooks          <- Cadernos Jupyter.
 │
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
