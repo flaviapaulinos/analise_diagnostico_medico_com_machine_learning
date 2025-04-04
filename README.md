@@ -139,8 +139,7 @@ Preprocessing:
 PowerTransformer critical for linear models
 
 Trees performed better with raw data
-![Imagem](relatorios/imagens/boxplot_comparativo.png)
-
+![Imagem](relatorios/imagens/boxplot.png)
 
 ## Organização do projeto
 
