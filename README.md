@@ -30,6 +30,7 @@ Hyperparameter tuning
 
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
 
+![Imagem](relatorios/imagens/svc.png)
 
 ## Base de Dados/ Dataset
 
@@ -96,6 +97,8 @@ Modelo/Model: SVC
 F2-Score: 0.922	     
 Tempo/Time: 0.716
 
+
+
 ### 🔑 Features Mais Importantes
 
 concave_points_mean (Odds Ratio: 41.79)
@@ -140,13 +143,8 @@ Trees performed better with raw data
 
 ```
 
-├── .gitignore         <- Arquivos e diretórios a serem ignorados pelo Git
-├── ambiente.yml       <- O arquivo de requisitos para reproduzir o ambiente de análise
-├── requirements.txt   <- O arquivo para instalar dependências via pip
-├── LICENSE            <- Licença de código aberto se uma for escolhida
-├── README.md          <- README principal para desenvolvedores que usam este projeto.
-|
 ├── dados              <- Arquivos de dados para o projeto.
+├── modelos            <- Modelos gerados para o projeto.
 |
 ├── notebooks          <- Cadernos Jupyter. 
 │
@@ -159,9 +157,13 @@ Trees performed better with raw data
 |      └── modelos.py   <- Funções utilizadas no modelo
 |
 ├── referencias        <- Dicionários de dados.
-|
-├── relatorios         <- Relatório
+├── relatorios         <- Relatório gerado durante o projeto utilizando a biblioteca [ydata-profiling]
 │   └── imagens        <- Gráficos e figuras gerados para serem usados em relatórios
+├── ambiente.yml       <- O arquivo de requisitos para reproduzir o ambiente de análise
+├── requirements.txt   <- O arquivo para instalar dependências via pip
+├── LICENSE            <- Licença de código aberto se uma for escolhida
+├── README.md          <- README principal para desenvolvedores que usam este projeto.
+|
 ```
 
 ## Configuração do ambiente
