@@ -30,7 +30,6 @@ Hyperparameter tuning
 
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
 
-![Imagem](relatorios/imagens/svc.png)
 
 ## Base de Dados/ Dataset
 
@@ -55,6 +54,7 @@ O conjunto de dados foi obtido do [Kaggle](https://www.kaggle.com/datasets/yasse
 
 ### Agradecimentos
 Este conjunto de dados foi referenciado a partir do Kaggle. Originalmente, os dados foram criados pelo Dr. William H. Wolberg da Universidade de Wisconsin.
+![Imagem](relatorios/imagens/histogramas.png)
 
 EN: 
 
@@ -97,7 +97,7 @@ Modelo/Model: SVC
 F2-Score: 0.922	     
 Tempo/Time: 0.716
 
-
+![Imagem](relatorios/imagens/svc.png)
 
 ### 🔑 Features Mais Importantes
 
@@ -106,6 +106,8 @@ concave_points_mean (Odds Ratio: 41.79)
 area_worst (Importância: 17.31)
 
 radius_worst (SHAP value: 1.71)
+
+![Imagem](relatorios/imagens/corr.png)
 
 ### 💡 Insights Técnicos / Technical Insights
 
@@ -123,6 +125,7 @@ PowerTransformer essencial para modelos lineares
 
 Árvores performaram melhor com dados originais
 
+
 EN
 
 Feature Selection:
@@ -136,7 +139,7 @@ Preprocessing:
 PowerTransformer critical for linear models
 
 Trees performed better with raw data
-
+![Imagem](relatorios/imagens/boxplot_comparativo.png)
 
 
 ## Organização do projeto
