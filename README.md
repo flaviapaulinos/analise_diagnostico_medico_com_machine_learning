@@ -11,8 +11,11 @@ PT:
 Comparação de modelos de classificação para diagnóstico benigno/maligno, com:
 
 Seleção de features (Mutual Information)
+
 Pré-processamento adaptativo (PowerTransformer para modelos lineais)
+
 Otimização de hiperparâmetros
+
 Análise comparativa (Regressão Logística vs XGBoost vs SVC)
 
 EN: 
@@ -20,9 +23,13 @@ EN:
 Classification model comparison for benign/malignant diagnosis featuring:
 
 Feature selection (Mutual Information)
+
 Adaptive preprocessing (PowerTransformer for linear models)
+
 Hyperparameter tuning
+
 Comparative analysis (Logistic Regression vs XGBoost vs SVC)
+
 
 ## Base de Dados/ Dataset
 
